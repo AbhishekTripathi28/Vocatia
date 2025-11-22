@@ -2,10 +2,12 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getCoverLetters } from "@/actions/cover-letter";
+import CoverLetterList from "@/components/aiCoverLetterComponents/CoverLetterList";
 
 
 export default async function CoverLetterPage() {
-  // const coverLetters = await getCoverLetters();
+   const coverLetters = await getCoverLetters();
 
   return (
     <div>
@@ -19,7 +21,7 @@ export default async function CoverLetterPage() {
         </Link>
       </div>
 
-      {/* <CoverLetterList coverLetters={coverLetters} /> */}
+      <CoverLetterList coverLetters={coverLetters} />
     </div>
   );
 }
