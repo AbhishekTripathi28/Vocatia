@@ -1,12 +1,13 @@
 {
-  "name": "sans-ai",
+  "name": "Vocatia",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.12.4",
@@ -33,7 +34,7 @@
     "html2pdf.js": "^0.10.3",
     "inngest": "^3.32.3",
     "lucide-react": "^0.479.0",
-    "next": "15.2.1",
+    "next": "15.2.6",
     "next-themes": "^0.4.4",
     "prisma": "^6.4.1",
     "react": "^19.0.0",
@@ -42,6 +43,7 @@
     "react-spinners": "^0.15.0",
     "recharts": "^2.15.1",
     "sonner": "^2.0.1",
+    "styled-components": "^6.1.17",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.24.2"
@@ -51,6 +53,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9.23.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
